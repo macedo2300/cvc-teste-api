@@ -37,7 +37,7 @@ public class HotelBrokerController {
 
 
     
-    @ApiOperation(value = "Buscar lista de Hotel")
+    @ApiOperation(value = "Busca Hotel pelo número de id.")
     @GetMapping("/consultar-hotel/{hotelId}")
     public ResponseEntity<HotelResponse>  findHotelById (@PathVariable(name = "hotelId",required = true) String id_hotel) throws Exception {
         
@@ -48,6 +48,7 @@ public class HotelBrokerController {
     }
 
 
+    @ApiOperation(value = "Lista de Hoteis pelo código da cidade, checkin,checkout, quantiade de adultos e crianças.")
     @GetMapping("/consultar-disponibilidade/")
     public ResponseEntity<?> findListHotel (@RequestParam Long cityCode, 
 			@RequestParam String checkin,

@@ -1,3 +1,9 @@
+
+### Descrição
+
+- Api responsável em retorna os detalhes do hotel.
+ 
+
 ### Pré-requisitos 
 
 - Necessário ter o *Maven* instalado    
@@ -12,7 +18,7 @@
 
 
 Para rodar o projeto localmente com o maven executar o comando:
-- `mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=8085` - Este comando irá rodar a aplicação pelo maven
+- `mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=8080` - Este comando irá rodar a aplicação pelo maven
 
 Para rodar o projeto localmente com o docker executar o comando:
 - `mvn clean package` - Este comando irá limpar e criar o jar da aplicação.
@@ -20,9 +26,14 @@ Para rodar o projeto localmente com o docker executar o comando:
 - `docker run -p 8080:8080 -e PORT=8080 broker/api` - Este comando irá exrcutar o conteiner da aplicação
 
 
-[SWAGGER DO PROJETO](http://localhost:8080/swagger-ui.html)
+### Documentação
 
-### TODO 
+[SWAGGER DO PROJETO LOCAL](http://localhost:8080/swagger-ui.html)
+
+[SWAGGER DO PROJETO HEROKUAPP ](https://cvc-teste-api.herokuapp.com/swagger-ui.html)
+
+
+
 
 
 
